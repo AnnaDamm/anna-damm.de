@@ -2,6 +2,10 @@ baseURL: 'http://172.21.158.251:1313/'
 title: Anna Damm
 languageCode: de-DE
 
+disableKinds:
+  - taxonomy
+  - term
+
 params:
   author: Anna Damm
   description: >-
