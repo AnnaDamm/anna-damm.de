@@ -519,7 +519,7 @@ footer .social-links {
 
 @media (prefers-color-scheme: dark) {
   html, body {
-    background-color: #121212;
+    background-color: #212121;
     color: #eee; }
   a {
     color: #82aeef; }
