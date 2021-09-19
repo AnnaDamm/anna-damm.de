@@ -1,0 +1,16 @@
+baseURL: 'http://172.21.158.251:1313/'
+title: Anna Damm
+languageCode: de-DE
+
+params:
+  author: Anna Damm
+  description: >-
+    Anna Damm ist Teamleiterin der Software-Entwicklungsabteilung für Private Krankenkassen
+    bei CHECK24
+  avatar: img/profile.jpg
+
+  social:
+    LinkedIn: anna-damm-645b3431
+    Github: AnnaDamm
+    Stackoverflow: 1386610/Arany
+    Email: anna.damm87@googlemail.com
