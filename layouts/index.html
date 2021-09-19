@@ -1,7 +1,10 @@
 {{ define "main" }}
   <section class="text-center fs-4">
     <div class="avatar mb-5">
-      <img class="rounded-circle" src="{{ .Site.Params.avatar }}" alt="Responsive image">
+      <picture>
+        <source srcset="img/profile.avif" type="image/avif">
+        <img class="rounded-circle" src="img/profile.jpg" alt="Profilbild" width="300" height="300">
+      </picture>
     </div>
     {{ .Content }}
   </section>

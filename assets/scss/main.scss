@@ -35,4 +35,12 @@ a {
     background-color: #121212;
     color: #eee;
   }
+
+  a {
+    color: #82aeef;
+
+    &:hover {
+      color: #afbbcc;
+    }
+  }
 }
