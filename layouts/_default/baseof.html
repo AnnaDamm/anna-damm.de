@@ -7,15 +7,12 @@
     <link rel="shortcut icon" type="image/jpeg" href="{{ .Site.BaseURL }}img/profile.jpg">
     <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     {{ $sass := resources.Get "scss/main.scss" }}
     {{ $style := $sass | resources.ToCSS }}
     <link rel="preload stylesheet" href="{{ $style.RelPermalink }}" as="style">
-    {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ $.Site.BaseURL}}{{ . }}">
-    {{ end }}
+    {{- block "header" .}}{{- end }}
   </head>
-  <body class="container-sm">
+  <body>
     {{ partial "header" . }}
     <main>
       {{- block "main" . }}{{- end }}

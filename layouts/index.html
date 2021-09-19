@@ -1,11 +1,13 @@
+{{ define "header" }}
+  {{ $sass := resources.Get "scss/pages/home.scss" }}
+  {{ $style := $sass | resources.ToCSS }}
+  <link rel="preload stylesheet" href="{{ $style.RelPermalink }}" as="style">
+{{ end }}
+
 {{ define "main" }}
-  <section class="text-center fs-4">
-    <div class="avatar mb-5">
-      <picture>
-        <source srcset="img/profile.avif" type="image/avif">
-        <img class="rounded-circle" src="img/profile.jpg" alt="Profilbild" width="300" height="300">
-      </picture>
-    </div>
-    {{ .Content }}
-  </section>
+    <picture>
+      <source srcset="img/profile.avif" type="image/avif">
+      <img class="avatar" src="img/profile.jpg" alt="Profilbild" width="300" height="300">
+    </picture>
+  {{ .Content }}
 {{ end }}
