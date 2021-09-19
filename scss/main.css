@@ -1,0 +1,26 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+html, body {
+  height: 100%; }
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000; }
+
+a {
+  text-decoration: none; }
+
+.social-links {
+  list-style: none; }
+  .social-links li {
+    margin-left: 10px; }
+
+.avatar {
+  padding-top: 8vh; }
+  .avatar img {
+    max-width: 300px; }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #eee; } }
