@@ -3,10 +3,10 @@
 
 **Anna Damm**
 
-Teamleiterin Software Entwicklung [Private&nbsp;Krankenversicherungen] 
+Teamleiterin Software Entwicklung [Private&nbsp;Krankenversicherung] 
 
 [CHECK24]
 
 
-[Private&nbsp;Krankenversicherungen]: https://krankenversicherung.check24.de
+[Private&nbsp;Krankenversicherung]: https://krankenversicherung.check24.de
 [CHECK24]: https://www.check24.de
